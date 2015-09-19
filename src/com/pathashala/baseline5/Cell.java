@@ -2,7 +2,6 @@
 package com.pathashala.baseline5;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Cell {
     private int xPosition;
@@ -31,7 +30,21 @@ public class Cell {
     }
 
     public String computeNextState(String[][] pattern) {
+        int neighbourAliveCount = 0;
 
-        return "-";
+        computePositionOfAdjacentCells(pattern);
+        System.out.println(adjacentCellPosition);
+        for (Integer xPosition : adjacentCellPosition.keySet()) {
+            Integer yPosition = adjacentCellPosition.get(xPosition);
+            if (pattern[xPosition][yPosition].equals("X"))
+                neighbourAliveCount++;
+        }
+
+        if (neighbourAliveCount < 2)
+            state = "-";
+        else if (neighbourAliveCount == 2)
+            state = "X";
+
+        return state;
     }
 }
