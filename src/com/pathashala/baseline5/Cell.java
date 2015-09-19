@@ -1,26 +1,26 @@
 //A cell has a position(x-y), state and it can compute the position of the neighbouring cells
 package com.pathashala.baseline5;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Cell {
     private int xPosition;
     private int yPosition;
-    private ArrayList<String> adjacentCellPosition;
+    private HashMap<Integer, Integer> adjacentCellPosition;
     private String state;
 
-    public Cell(int xPosition, int yPosition, String state, ArrayList<String> adjacentCellPosition) {
+    public Cell(int xPosition, int yPosition, String state, HashMap<Integer, Integer> adjacentCellPosition) {
         this.xPosition = xPosition;
         this.yPosition = yPosition;
         this.adjacentCellPosition = adjacentCellPosition;
         this.state = state;
     }
 
-    public ArrayList<String> computePositionOfAdjacentCells(String pattern [][]) {
+    public HashMap<Integer, Integer> computePositionOfAdjacentCells(String pattern[][]) {
 
-        adjacentCellPosition.add("01");
-        adjacentCellPosition.add("10");
-        adjacentCellPosition.add("11");
+        adjacentCellPosition.put(0, 1);
+        adjacentCellPosition.put(1, 0);
+        adjacentCellPosition.put(1, 1);
         return adjacentCellPosition;
     }
 }

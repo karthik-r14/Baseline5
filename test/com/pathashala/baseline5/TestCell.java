@@ -2,7 +2,7 @@ package com.pathashala.baseline5;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,17 +11,18 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroZero() {
 
-        Cell cell = new Cell(0, 0, "x", new ArrayList<String>());
+        Cell cell = new Cell(0, 0, "x", new HashMap<Integer, Integer>());
 
-        String[][] sample = new String[][]{  {"X", "X"},
-                                             {"X", "X"}
-                                          };
+        String[][] sample = new String[][]{{"X", "X"},
+                {"X", "X"}
+        };
 
-        ArrayList<String> position = new ArrayList<>();
-        position.add("01");
-        position.add("10");
-        position.add("11");
+        HashMap<Integer, Integer> positionXYMap = new HashMap<>();
 
-        assertEquals(position, cell.computePositionOfAdjacentCells(sample));
+        positionXYMap.put(0, 1);
+        positionXYMap.put(1, 0);
+        positionXYMap.put(1, 1);
+
+        assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
     }
 }
