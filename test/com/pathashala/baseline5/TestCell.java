@@ -11,7 +11,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroZero() {
 
-        Cell cell = new Cell(0, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X"},
                 {"X", "X"}
@@ -29,7 +29,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroOne() {
 
-        Cell cell = new Cell(0, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X"},
                 {"X", "X"}
@@ -47,7 +47,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellOneZero() {
 
-        Cell cell = new Cell(1, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(1, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X"},
                 {"X", "X"}
@@ -65,7 +65,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellOneOne() {
 
-        Cell cell = new Cell(1, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(1, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X"},
                 {"X", "X"}
@@ -83,7 +83,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroZeroOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(0, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -102,7 +102,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroOneOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(0, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -123,7 +123,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroTwoOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(0, 2, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 2, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -142,7 +142,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellOneZeroOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(1, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(1, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -163,7 +163,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellOneOneOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(1, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(1, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -187,7 +187,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellOneTwoOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(1, 2, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(1, 2, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -208,7 +208,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellTwoZeroOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(2, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(2, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -227,7 +227,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellTwoOneOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(2, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(2, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -248,7 +248,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellTwoTwoOfAThreeXThreeMatrix() {
 
-        Cell cell = new Cell(2, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(2, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"X", "X", "-"},
                 {"X", "-", "X"},
@@ -268,7 +268,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroZeroOfAFourXFourMatrix() {
 
-        Cell cell = new Cell(0, 0, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 0, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"-", "-", "-", "-"},
                 {"-", "X", "X", "X"},
@@ -288,7 +288,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellZeroOneOfAFourXFourMatrix() {
 
-        Cell cell = new Cell(0, 1, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(0, 1, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"-", "-", "-", "-"},
                 {"-", "X", "X", "X"},
@@ -310,7 +310,7 @@ public class TestCell {
     @Test
     public void shouldReturnAdjacentPositionForCellTwoTwoOfAFourXFourMatrix() {
 
-        Cell cell = new Cell(2, 2, "x", new HashMap<Integer, Integer>());
+        Cell cell = new Cell(2, 2, "X", new HashMap<Integer, Integer>());
 
         String[][] sample = new String[][]{{"-", "-", "-", "-"},
                 {"-", "X", "X", "X"},
@@ -330,5 +330,17 @@ public class TestCell {
         positionXYMap.put(3, 3);
 
         assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
+    }
+
+    @Test
+    public void cellShouldDieIfthereAreLessThanTwoLiveNeighbours() {
+
+        Cell cell = new Cell(0, 0, "X", new HashMap<Integer, Integer>());
+
+        String[][] sample = new String[][]{{"X", "-"},
+                {"X", "-"}
+        };
+
+        assertEquals("-", cell.computeNextState(sample));
     }
 }

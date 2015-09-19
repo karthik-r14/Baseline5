@@ -20,12 +20,18 @@ public class Cell {
     public HashMap<Integer, Integer> computePositionOfAdjacentCells(String pattern[][]) {
 
         for (int row = 0; row < pattern.length; ++row) {
-            for (int column = 0; column < pattern.length; ++column)
+            for (int column = 0; column < pattern.length; ++column) {
                 if (row != xPosition || column != yPosition) {
                     if (Math.abs(row - xPosition) <= 1 && Math.abs(column - yPosition) <= 1)
                         adjacentCellPosition.put(row, column);
                 }
+            }
         }
         return adjacentCellPosition;
+    }
+
+    public String computeNextState(String[][] pattern) {
+
+        return "-";
     }
 }
