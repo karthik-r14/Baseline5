@@ -265,4 +265,70 @@ public class TestCell {
         assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
     }
 
+    @Test
+    public void shouldReturnAdjacentPositionForCellZeroZeroOfAFourXFourMatrix() {
+
+        Cell cell = new Cell(0, 0, "x", new HashMap<Integer, Integer>());
+
+        String[][] sample = new String[][]{{"-", "-", "-", "-"},
+                {"-", "X", "X", "X"},
+                {"X", "X", "X", "-"},
+                {"-", "-", "-", "-"}
+        };
+
+        HashMap<Integer, Integer> positionXYMap = new HashMap<>();
+
+        positionXYMap.put(0, 1);
+        positionXYMap.put(1, 0);
+        positionXYMap.put(1, 1);
+
+        assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
+    }
+
+    @Test
+    public void shouldReturnAdjacentPositionForCellZeroOneOfAFourXFourMatrix() {
+
+        Cell cell = new Cell(0, 1, "x", new HashMap<Integer, Integer>());
+
+        String[][] sample = new String[][]{{"-", "-", "-", "-"},
+                {"-", "X", "X", "X"},
+                {"X", "X", "X", "-"},
+                {"-", "-", "-", "-"}
+        };
+
+        HashMap<Integer, Integer> positionXYMap = new HashMap<>();
+
+        positionXYMap.put(0, 0);
+        positionXYMap.put(0, 2);
+        positionXYMap.put(1, 0);
+        positionXYMap.put(1, 1);
+        positionXYMap.put(1, 2);
+
+        assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
+    }
+
+    @Test
+    public void shouldReturnAdjacentPositionForCellTwoTwoOfAFourXFourMatrix() {
+
+        Cell cell = new Cell(2, 2, "x", new HashMap<Integer, Integer>());
+
+        String[][] sample = new String[][]{{"-", "-", "-", "-"},
+                {"-", "X", "X", "X"},
+                {"X", "X", "X", "-"},
+                {"-", "-", "-", "-"}
+        };
+
+        HashMap<Integer, Integer> positionXYMap = new HashMap<>();
+
+        positionXYMap.put(1, 1);
+        positionXYMap.put(1, 2);
+        positionXYMap.put(1, 3);
+        positionXYMap.put(2, 1);
+        positionXYMap.put(2, 3);
+        positionXYMap.put(3, 1);
+        positionXYMap.put(3, 2);
+        positionXYMap.put(3, 3);
+
+        assertEquals(positionXYMap, cell.computePositionOfAdjacentCells(sample));
+    }
 }
