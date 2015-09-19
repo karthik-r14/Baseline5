@@ -26,7 +26,6 @@ public class Cell {
                         adjacentCellPosition.put(row, column);
                 }
         }
-        System.out.println(adjacentCellPosition);
         return adjacentCellPosition;
     }
 }
