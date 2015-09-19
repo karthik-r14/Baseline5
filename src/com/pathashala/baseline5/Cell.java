@@ -18,9 +18,11 @@ public class Cell {
 
     public HashMap<Integer, Integer> computePositionOfAdjacentCells(String pattern[][]) {
 
-        adjacentCellPosition.put(0, 1);
-        adjacentCellPosition.put(1, 0);
-        adjacentCellPosition.put(1, 1);
+        for (int row = 0; row < pattern.length; ++row) {
+            for (int column = 0; column < pattern.length; ++column)
+                if (row != xPosition || column != yPosition)
+                    adjacentCellPosition.put(row, column);
+        }
         return adjacentCellPosition;
     }
 }
