@@ -2,6 +2,7 @@
 package com.pathashala.baseline5;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Cell {
     private int xPosition;
@@ -20,9 +21,12 @@ public class Cell {
 
         for (int row = 0; row < pattern.length; ++row) {
             for (int column = 0; column < pattern.length; ++column)
-                if (row != xPosition || column != yPosition)
-                    adjacentCellPosition.put(row, column);
+                if (row != xPosition || column != yPosition) {
+                    if (Math.abs(row - xPosition) <= 1 && Math.abs(column - yPosition) <= 1)
+                        adjacentCellPosition.put(row, column);
+                }
         }
+        System.out.println(adjacentCellPosition);
         return adjacentCellPosition;
     }
 }
